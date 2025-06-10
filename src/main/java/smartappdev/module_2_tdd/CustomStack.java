@@ -22,6 +22,15 @@ public class CustomStack<T> {
         size++;
     }
 
+    public T pop() {
+        if (isEmpty())
+            throw new IllegalStateException("Stack is empty");
+        T data = top.data;
+        top = top.next;
+        size--;
+        return data;
+    }
+
     private static class Node<T> {
         T data;
         Node<T> next;
