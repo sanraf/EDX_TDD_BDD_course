@@ -15,6 +15,13 @@ public class CustomStack<T> {
         return top == null;
     }
 
+    public void push(T data) {
+        Node<T> newNode = new Node<>(data);
+        newNode.next = top;
+        top = newNode;
+        size++;
+    }
+
     private static class Node<T> {
         T data;
         Node<T> next;
