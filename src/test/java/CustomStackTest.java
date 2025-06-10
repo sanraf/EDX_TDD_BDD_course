@@ -42,4 +42,15 @@ public class CustomStackTest{
         assertEquals("Apples and Oranges",customStack.peek());
     }
 
+    @Test
+    public void stackSizeTest(){
+        assertEquals(0,customStack.size());
+
+        customStack.push("Apples");
+        assertEquals(1,customStack.size());
+
+        customStack.push("Bananas");
+        assertEquals(2,customStack.size());
+    }
+
 }
