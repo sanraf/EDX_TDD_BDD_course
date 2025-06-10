@@ -37,6 +37,10 @@ public class CustomStack<T> {
         return top.data;
     }
 
+    public int size() {
+        return this.size;
+    }
+
     private static class Node<T> {
         T data;
         Node<T> next;
