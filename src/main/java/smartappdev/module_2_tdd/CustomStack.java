@@ -31,6 +31,12 @@ public class CustomStack<T> {
         return data;
     }
 
+    public T peek() {
+        if (isEmpty())
+            throw new IllegalStateException("Stack is empty");
+        return top.data;
+    }
+
     private static class Node<T> {
         T data;
         Node<T> next;
