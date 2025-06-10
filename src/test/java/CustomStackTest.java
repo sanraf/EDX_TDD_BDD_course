@@ -29,4 +29,11 @@ public class CustomStackTest{
         assertTrue(customStack.isEmpty(), "Stack should be empty");
     }
 
+    @Test
+    public void popEmptyStackTest(){
+        assertThrows(IllegalStateException.class, () -> {
+            customStack.pop();
+        });
+    }
+
 }
