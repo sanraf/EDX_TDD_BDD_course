@@ -36,4 +36,10 @@ public class CustomStackTest{
         });
     }
 
+    @Test
+    public void peekTest(){
+        customStack.push("Apples and Oranges");
+        assertEquals("Apples and Oranges",customStack.peek());
+    }
+
 }
