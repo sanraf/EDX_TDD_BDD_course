@@ -1,6 +1,5 @@
 import org.junit.jupiter.api.Test;
 
-import smartappdev.module_2_tdd.CustomStack;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -19,7 +18,7 @@ public class CustomStackTest{
     public void pushStackTest(){
         customStack.push("Apples and Oranges");
         boolean result = customStack.isEmpty();
-         assertFalse(result, "Stack should not be empty");
+        assertFalse(result, "Stack should not be empty");
     }
 
     @Test
